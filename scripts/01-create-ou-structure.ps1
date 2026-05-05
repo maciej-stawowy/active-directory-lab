@@ -3,7 +3,7 @@
 # Purpose:     Create the Organizational Unit (OU) structure for nordwind.local
 #              as defined in the project design document (section 6).
 # Target:      DC01 (nordwind.local)
-# Author:      [Your name]
+# Author:      Maciej Stawowy
 # Date:        April 2026
 # Idempotent:  Yes — safe to run multiple times.
 # =============================================================================
