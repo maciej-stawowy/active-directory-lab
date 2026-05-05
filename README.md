@@ -237,7 +237,7 @@ This lab is provided as-is for educational and portfolio purposes. The PowerShel
 
 Built by **Maciej Stawowy** as part of preparation for a Junior SysAdmin / IT Support role.
 
-Connect: \[linkedIn](www.linkedin.com/in/maciej-stawowy-3ab999153) — \[Email](mac.stawowy@gmail.com)
+Connect: [LinkedIn](https://www.linkedin.com/in/maciej-stawowy-3ab999153) — [Email](mailto:mac.stawowy@gmail.com)
 
 *Last updated: May 2026.*
 
