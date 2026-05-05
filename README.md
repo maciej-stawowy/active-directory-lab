@@ -14,13 +14,13 @@ This is not a "follow a YouTube tutorial" lab. Every architectural decision here
 
 ### Network topology
 
-!\[Network topology](diagrams/01-network-topology.svg)
+![Network topology](diagrams/01-network-topology.svg)
 
 Two virtual machines connected through a VirtualBox internal network (`NordwindLAN`), fully isolated from the host and the public internet. `DC01` runs Active Directory Domain Services, DNS, and a file share. `CL01` is a Windows 10 Pro workstation joined to the `nordwind.local` domain.
 
 ### AGDLP permission chain
 
-!\[AGDLP flow](diagrams/02-agdlp-flow.svg)
+![AGDLP flow](diagrams/02-agdlp-flow.svg)
 
 Every permission in this lab follows the **AGDLP** model: **A**ccounts go into **G**lobal groups by role, global groups nest into **D**omain **L**ocal groups by resource, and only domain local groups receive **P**ermissions. No user is ever granted direct access to a folder. Adding or removing a salesperson is a single group-membership change.
 
