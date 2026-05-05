@@ -41,7 +41,7 @@ Every permission in this lab follows the **AGDLP** model: **A**ccounts go into *
 
 ## The fictional company
 
-**Nordwind Logistics Sp. z o.o.** — a freight forwarding company headquartered in Poznań with a warehouse near Wrocław. Around 40 employees across seven departments (Management, IT, Accounting, Sales, Logistics, Warehouse, HR). The lab models a realistic small-to-medium business — large enough to need proper structure, small enough to fit in two VMs.
+**Nordwind Logistics Sp. z o.o.** - a freight forwarding company headquartered in Poznań with a warehouse near Wrocław. Around 40 employees across seven departments (Management, IT, Accounting, Sales, Logistics, Warehouse, HR). The lab models a realistic small-to-medium business - large enough to need proper structure, small enough to fit in two VMs.
 
 The full company profile and design rationale live in [`docs/01-design.md`](docs/01-design.md).
 
@@ -58,7 +58,7 @@ The full company profile and design rationale live in [`docs/01-design.md`](docs
 
 ### Organizational unit structure
 
-A custom top-level container (`OU=Nordwind`) with department OUs underneath. The default Windows `Users` and `Computers` containers are intentionally left empty — they are CN containers, not OUs, and cannot be Group-Policy-targeted.
+A custom top-level container (`OU=Nordwind`) with department OUs underneath. The default Windows `Users` and `Computers` containers are intentionally left empty - they are CN containers, not OUs, and cannot be Group-Policy-targeted.
 
 ```
 nordwind.local
@@ -77,8 +77,8 @@ nordwind.local
 ### Users and groups
 
 * 10 user accounts created from a CSV (HR-style workflow), placed automatically in the correct department OU
-* 7 global security groups (`G\_\*`) — one per department, named by **role**
-* 7 domain local groups (`DL\_\*`) — named by **resource**, holding the actual permissions
+* 7 global security groups (`G\_\*`) - one per department, named by **role**
+* 7 domain local groups (`DL\_\*`) - named by **resource**, holding the actual permissions
 * Cross-department `DL\_FS01\_Public\_Read` for company-wide read access
 
 ### File share with double-layer security
@@ -92,7 +92,7 @@ A real working share at `\\\\DC01\\Sales` with:
 
 ### Group Policy
 
-* `GPO-Nordwind-Password-Policy` — minimum 12 characters, complexity required, lockout after 5 failed attempts for 15 minutes
+* `GPO-Nordwind-Password-Policy` - minimum 12 characters, complexity required, lockout after 5 failed attempts for 15 minutes
 * Linked to the domain root (a custom GPO, **not** an edit of the Default Domain Policy)
 * Verified on `CL01` with `gpresult /r /scope:computer`
 
@@ -101,13 +101,13 @@ A real working share at `\\\\DC01\\Sales` with:
 * `CL01` joined to `nordwind.local` with `Add-Computer`
 * `marek.lewandowski` (Sales) successfully logs on as a domain user
 * Marek can read and write files in `\\\\DC01\\Sales`
-* `magdalena.kaminska` (HR) is **denied** access to the same share — proving access is gated by AGDLP membership, not just domain authentication
+* `magdalena.kaminska` (HR) is **denied** access to the same share - proving access is gated by AGDLP membership, not just domain authentication
 
 \---
 
 ## Automation
 
-All repeatable operations are scripted in PowerShell. Each script is **idempotent** — safe to run multiple times — and uses the AD module's standard cmdlets.
+All repeatable operations are scripted in PowerShell. Each script is **idempotent** - safe to run multiple times - and uses the AD module's standard cmdlets.
 
 |Script|Purpose|
 |-|-|
