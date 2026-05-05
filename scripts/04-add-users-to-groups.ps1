@@ -4,7 +4,7 @@
 #                Step 1 — Add users (A) to global groups (G) by department
 #                Step 2 — Nest global groups (G) into domain local groups (DL)
 # Idempotent:  Yes — Add-ADGroupMember errors on duplicate are caught.
-# Author:      [Your name]
+# Author:      Maciej Stawowy
 # Date:        April 2026
 # =============================================================================
 
