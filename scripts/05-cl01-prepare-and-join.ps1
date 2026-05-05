@@ -7,7 +7,7 @@
 #              - Join domain
 #              - Schedule reboot
 # Run as:      Local Administrator on CL01
-# Author:      [Your name]
+# Author:      Maciej Stawowy
 # Date:        April 2026
 # =============================================================================
 
