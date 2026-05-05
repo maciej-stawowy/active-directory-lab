@@ -6,7 +6,7 @@
 
 ## Why this project exists
 
-This is not a "follow a YouTube tutorial" lab. Every architectural decision here was made consciously, documented in a design document **before** any clicking, and justified against production best practice. The goal was to demonstrate not only *that I can install Active Directory*, but that I understand **why** it is configured the way it is — and what I would do differently in a real production environment.
+This is not a "follow a YouTube tutorial" lab. Every architectural decision here was made consciously, documented in a design document **before** any clicking, and justified against production best practice. The goal was to demonstrate not only *that I can install Active Directory*, but that I understand **why** it is configured the way it is - and what I would do differently in a real production environment.
 
 \---
 
