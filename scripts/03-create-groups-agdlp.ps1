@@ -5,7 +5,7 @@
 #                - Domain Local groups (DL_*)  — by RESOURCE (e.g. file share)
 # Output:      Groups in OU=Security,OU=Groups,OU=Nordwind
 # Idempotent:  Yes.
-# Author:      [Your name]
+# Author:      Maciej Stawowy
 # Date:        April 2026
 # =============================================================================
 
