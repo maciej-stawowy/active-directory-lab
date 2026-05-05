@@ -5,7 +5,7 @@
 # Input:       employees.csv (FirstName,LastName,Department,JobTitle,Office)
 # Output:      Console log + lab_passwords.csv with initial passwords
 # Idempotent:  Yes — existing users are skipped (not modified).
-# Author:      [Your name]
+# Author:      Maciej Stawowy
 # Date:        April 2026
 # =============================================================================
 
